@@ -85,21 +85,6 @@ public class Metodos {
 			System.exit(0);
 		}
 		if(dias == 2) {
-			Func90();
-		}
-	}
-	
-	public static void Func90(){
-		System.out.println("Doou sangue nos ultimos 90 dias? ");
-		System.out.println("[1] Sim ");
-		System.out.println("[2] Não");
-		peso = ler.nextInt();
-		
-		if(peso == 1) {
-			System.out.println("Você não pode doar ainda.");
-			System.exit(0);
-		}
-		if(peso == 2) {
 			FuncGravida();
 		}
 	}
@@ -235,7 +220,7 @@ public class Metodos {
 			System.exit(0);
 		}
 		if(dente == 2) {
-				FuncDente();
+				FuncTatuagem();
 		}
 	}
 	
@@ -264,7 +249,7 @@ public class Metodos {
 			FuncButantan();
 		}
 		if(vacina == 2) {
-//				FuncTransfusao();
+				FuncTransfusao();
 		}
 	}
 	
@@ -407,6 +392,7 @@ public class Metodos {
 		System.out.println("=                   Você Pode DOAR!!                   =");
 		System.out.println("=       Encontre o posto de coleta mais próximo!!      =");
 		System.out.println("========================================================");
+		System.exit(0);
 	}
 		
 
