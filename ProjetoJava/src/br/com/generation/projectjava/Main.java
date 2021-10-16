@@ -1,5 +1,7 @@
 package br.com.generation.projectjava;
 
+import javax.swing.JOptionPane;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -21,12 +23,14 @@ public class Main {
 		if(d.getIdade() >= 16 && d.getIdade() <= 17) {
 			d.idade16();
 		}
-		else if(d.getIdade() >= 18 && d.getIdade() <=69) {
+		if(d.getIdade() >= 18 && d.getIdade() <=69) {
 			d.sexo();
 		}
-		if(d.getIdade() < 16) {
-			System.out.println("Que pena, você não pode doar.");
+		if(d.getIdade() < 16 || d.getIdade() > 69) {
+			JOptionPane.showMessageDialog(null, "Que pena, você não pode doar =/", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+            System.exit(0);
 		}
+
 		
 //		Bifurcação Sexo
 	
