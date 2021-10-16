@@ -30,6 +30,22 @@ Venha contribuir com a vida de alguém!!!
  
  <br><br>
  
+ ![Inserir um título (2)](https://user-images.githubusercontent.com/90745992/137603370-db1ae38a-348c-48a8-b367-ea7abdd9f46f.png)
+ <br><br>
+Segunda parte das tomadas de decisão do usuário.
+<p/>
+
+  <br><br>
+
+### Funcionalidades de usuário:
+
+◉	EM CONSTRUÇÃO (AGUARDE....)
+
+<br><br>
+
+### Funcionalidades técnicas:
+
+◉	EM CONSTRUÇÃO (AGUARDE...)
 
 
 
