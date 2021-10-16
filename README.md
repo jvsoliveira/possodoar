@@ -23,6 +23,15 @@ Venha contribuir com a vida de alguém!!!
 # SÍNTESE DA CONSTRUÇÃO DE DECISÕES NO PROGRAMA 
 
 ![Inserir um título (1)](https://user-images.githubusercontent.com/90745992/137557439-e39ab525-2da1-4199-8419-b8f3d307656d.png)
+ <br><br>
+ O início das tomadas de decisão do usuário.
+ 
+ <p/>
+ 
+ <br><br>
+ 
+
+
 
 
 
