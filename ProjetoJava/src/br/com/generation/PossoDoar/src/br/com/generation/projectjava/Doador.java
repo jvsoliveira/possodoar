@@ -6,7 +6,7 @@ public class Doador implements Interface{
 	
 	Scanner ler = new Scanner(System.in);
 	
-
+//Vamos terminar essa m****
 //	Atributos
 	
 	private String nome;
