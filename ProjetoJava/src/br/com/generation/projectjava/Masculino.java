@@ -9,7 +9,7 @@ public class Masculino extends Doador{
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Doou sangue nos ultimos 60 dias?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
-			JOptionPane.showMessageDialog(null, "Que pena, você não pode doar =/", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você doou sangue nos ultimos 60 dias.Então não está apto a doar.Tente doar após os 60 dias", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.NO_OPTION) {

@@ -9,7 +9,7 @@ public class Feminino extends Doador{
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Doou sangue nos ultimos 90 dias?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
-			JOptionPane.showMessageDialog(null, "Que pena, você não pode doar =/", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você doou sangue nos ultimos 90 dias.Então não esta apto a doar ainda ...", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.NO_OPTION) {
@@ -26,7 +26,7 @@ public class Feminino extends Doador{
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Você está grávida?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
-			JOptionPane.showMessageDialog(null, "Que pena, você não pode doar =/", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você está grávida.Não esta apto a doar ainda...", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.NO_OPTION) {
@@ -43,7 +43,7 @@ public class Feminino extends Doador{
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Você realizou parto normal nos últimos 90 dias?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
-			JOptionPane.showMessageDialog(null, "Que pena, você não pode doar =/", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você realizou parto normal nos últimos 90 dias.Então não esta apto a doar ainda...", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.NO_OPTION) {
@@ -60,7 +60,7 @@ public class Feminino extends Doador{
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Você realizou parto por cesariana nos últimos 180 dias?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
-			JOptionPane.showMessageDialog(null, "Que pena, você não pode doar =/", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você realizou parto por cesariana nos últimos 180 dias.Então não esta apto a doar...Tente doar após os 180 dias", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.NO_OPTION) {
@@ -77,7 +77,7 @@ public class Feminino extends Doador{
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Você está ou esteve amamentando no último ano?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
-			JOptionPane.showMessageDialog(null, "Que pena, você não pode doar =/", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você está ou esteve amamentando no último ano.Então esta apto a doar...Tente doar após 1 ano do fim da amamentação", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.NO_OPTION) {
