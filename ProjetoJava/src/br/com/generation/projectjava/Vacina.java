@@ -4,9 +4,9 @@ public class Vacina extends Doador {
 	
 
 	public void funcButantan(){
-		System.out.println("Você tomou a vacina Coronavac? ");
+		System.out.println("VocÃª tomou a vacina Coronavac? ");
 		System.out.println("[1] Sim ");
-		System.out.println("[2] Não");
+		System.out.println("[2] NÃ£o");
 		int but = ler.nextInt();
 		
 		if(but == 1) {
@@ -18,24 +18,24 @@ public class Vacina extends Doador {
 	}
 	
 	public void func48h(){
-		System.out.println("Passou 48h desde que você tomou a vacina? ");
+		System.out.println("Passou 48h desde que vocÃª tomou a vacina? ");
 		System.out.println("[1] Sim ");
-		System.out.println("[2] Não");
+		System.out.println("[2] NÃ£o");
 		int temp = ler.nextInt();
 		
 		if(temp == 1) {
 			funcTransfusao();
 		}
 		if(temp == 2) {
-			System.out.println("Você não pode doar ainda.");
+			System.out.println("NÃ£o passou 48h desde que vocÃª tomou a vacina.EntÃ£o vocÃª nÃ£o esta apto a doar ainda...Tente apÃ³s as 48h");
 			System.exit(0);
 		}
 	}
 	
 	public void funcAstrazeneca(){
-		System.out.println("Você tomou a vacina AstraZeneca? ");
+		System.out.println("VocÃª tomou a vacina AstraZeneca? ");
 		System.out.println("[1] Sim ");
-		System.out.println("[2] Não");
+		System.out.println("[2] NÃ£o");
 		int astra = ler.nextInt();
 		
 		if(astra == 1) {
@@ -47,16 +47,16 @@ public class Vacina extends Doador {
 	}
 	
 	public void func7d(){
-		System.out.println("Passou 7 dias desde que você tomou a vacina? ");
+		System.out.println("Passou 7 dias desde que vocÃª tomou a vacina? ");
 		System.out.println("[1] Sim ");
-		System.out.println("[2] Não");
+		System.out.println("[2] NÃ£o");
 		int tempo = ler.nextInt();
 		
 		if(tempo == 1) {
 			funcTransfusao();
 		}
 		if(tempo == 2) {
-			System.out.println("Você não pode doar ainda.");
+			System.out.println("NÃ£o passou 7 dias desde que vocÃª tomou a vacina.EntÃ£o vocÃª Ã£o estÃ¡ apto a doar ainda...Tente apÃ³s os 7");
 			System.exit(0);
 		}
 	}
