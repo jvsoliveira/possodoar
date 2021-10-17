@@ -17,8 +17,9 @@ public class Main {
 //		 Chamada dos métodos
 		
 		d.nome();
-		d.idade();
 		d.sangue();
+		d.idade();
+	
 		
 //		Bifurcação Idade
 		

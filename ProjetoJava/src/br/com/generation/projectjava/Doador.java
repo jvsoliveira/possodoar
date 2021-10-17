@@ -93,7 +93,7 @@ public class Doador implements Interface{
 	public void sexo(){
 		
 		Object[] options = {"Masculino", "Feminino", "Cancelar"};
-		int i = JOptionPane.showOptionDialog(null,"Com qual sexo você se identifica?:", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
+		int i = JOptionPane.showOptionDialog(null,"Qual seu sexo?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
 			setSexo(1);
 		}
@@ -109,12 +109,12 @@ public class Doador implements Interface{
 	public void func50(){
 		
 		Object[] options = {"Sim", "Não", "Cancelar"};
-		int i = JOptionPane.showOptionDialog(null,"Você possui mais de 50kg?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
+		int i = JOptionPane.showOptionDialog(null,"Você pesa mais de 50kg?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
 			funcSaude();
 		}
 		else if(i == JOptionPane.NO_OPTION) {
-			JOptionPane.showMessageDialog(null, "Você possui menos de 50kg.Não está apto a doar ainda...", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você pesa menos de 50kg.Não está apto a doar ainda...", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.CANCEL_OPTION) {
@@ -285,6 +285,7 @@ public class Doador implements Interface{
 		
 		System.out.println();
 		
+	//	JOptionPane.showMessageDialog(null,  getNome(), "Legal, você pode ser um doador!", JOptionPane.INFORMATION_MESSAGE);
 		System.out.println(getNome());
 		System.out.println(getIdade());
 		System.out.println(getSangue());
