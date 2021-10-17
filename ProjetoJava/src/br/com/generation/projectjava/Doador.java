@@ -283,7 +283,11 @@ public class Doador implements Interface{
 		System.out.println("=                   Você Pode DOAR!!                   =");
 		System.out.println("=       Encontre o posto de coleta mais próximo!!      =");
 		System.out.println("========================================================");
+		
+		System.out.println();
+		
 		System.out.println(getNome());
+		System.out.println(getIdade());
 		System.exit(0);
 		
 		
