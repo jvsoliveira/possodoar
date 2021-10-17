@@ -96,7 +96,7 @@ public class Doador implements Interface{
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Você possui mais de 50kg?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
-			funcGripe();
+			funcSaude();
 		}
 		else if(i == JOptionPane.NO_OPTION) {
 			JOptionPane.showMessageDialog(null, "Você possui menos de 50kg.Não está apto a doar ainda...", "AVISO", JOptionPane.INFORMATION_MESSAGE);
