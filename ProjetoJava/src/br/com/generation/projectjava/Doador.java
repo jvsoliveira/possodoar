@@ -11,7 +11,7 @@ public class Doador implements Interface{
 
 //	Atributos
 	
-	private String nome;
+	private String nome, sangue;
 	private int idade, sexo, vacina;
 
 	
@@ -28,6 +28,14 @@ public class Doador implements Interface{
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	public String getSangue() {
+		return sangue;
+	}
+	public void setSangue(String sangue) {
+		this.sangue = sangue;
+	}
+
 	public int getIdade() {
 		return idade;
 	}
@@ -48,6 +56,13 @@ public class Doador implements Interface{
 		String resp;
 		resp = JOptionPane.showInputDialog( "Digite seu nome completo:");
 		setNome(resp);
+	}
+	
+	public void sangue(){
+		
+		String resp;
+		resp = JOptionPane.showInputDialog( "Digite seu tipo sanguíneo:");
+		setSangue(resp);
 	}
 	
 	public void idade() {
@@ -112,11 +127,11 @@ public class Doador implements Interface{
 		
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Você está em boas condições de saúde?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
-		if(i == JOptionPane.YES_OPTION) {
+		if(i == JOptionPane.NO_OPTION) {
 			JOptionPane.showMessageDialog(null, "Você não está em boas condições de saúde. Então não está apto a doar ainda...Aguarde a saúde melhorar ou procure um proficional da saúde antes da doação", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
-		else if(i == JOptionPane.NO_OPTION) {
+		else if(i == JOptionPane.YES_OPTION) {
 			funcDente();
 		}
 		else if(i == JOptionPane.CANCEL_OPTION) {
@@ -272,6 +287,7 @@ public class Doador implements Interface{
 		
 		System.out.println(getNome());
 		System.out.println(getIdade());
+		System.out.println(getSangue());
 		System.exit(0);
 		
 		

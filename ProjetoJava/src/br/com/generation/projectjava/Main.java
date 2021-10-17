@@ -13,10 +13,12 @@ public class Main {
 		Masculino mc = new Masculino();
 		Vacina vac = new Vacina();
 		
+		
 //		 Chamada dos métodos
 		
 		d.nome();
 		d.idade();
+		d.sangue();
 		
 //		Bifurcação Idade
 		
