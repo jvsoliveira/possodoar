@@ -6,7 +6,8 @@ public class Doador implements Interface{
 	
 //	Atributos
 	
-	private String nome, sangue;
+	private String nome; 
+	private Object sangue;
 	private int idade, sexo, vacina;
 
 	
@@ -24,11 +25,11 @@ public class Doador implements Interface{
 		this.nome = nome;
 	}
 	
-	public String getSangue() {
+	public Object getSangue() {
 		return sangue;
 	}
-	public void setSangue(String sangue) {
-		this.sangue = sangue;
+	public void setSangue(Object selectedValue) {
+		this.sangue = selectedValue;
 	}
 
 	public int getIdade() {
@@ -54,18 +55,27 @@ public class Doador implements Interface{
 	}
 	
 	public void sangue(){
-		
-		String resp;
-		resp = JOptionPane.showInputDialog( "Digite seu tipo sanguíneo:");
-		setSangue(resp);
+		Object[] itens = {"A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-"};         
+		Object selectedValue = JOptionPane.showInputDialog(null, "Qual seu tipo sanguíneo?", "Tipo Sanguíneo"                
+				, JOptionPane.QUESTION_MESSAGE, null, itens, itens[0]);    
+		setSangue(selectedValue);
 	}
+
 	
 	public void idade() {
+		while (true) {
+		try {
 		String resp;
 		resp = JOptionPane.showInputDialog( "Digite sua idade:");
 		int resposta = Integer.parseInt(resp);
 		setIdade(resposta);
+		break;
 		
+		} catch (NumberFormatException ex) {
+			JOptionPane.showMessageDialog(null,"IDADE INVÁLIDA...\nDigite novamente.","Idade Inválida", JOptionPane.ERROR_MESSAGE);
+			}
+		}
+	
 	}
 	
 	public void idade16(){
@@ -123,7 +133,7 @@ public class Doador implements Interface{
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Você está em boas condições de saúde?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.NO_OPTION) {
-			JOptionPane.showMessageDialog(null, "Você não está em boas condições de saúde. Então não está apto a doar ainda...Aguarde a saúde melhorar ou procure um proficional da saúde antes da doação", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você não está em boas condições de saúde. Então não está apto a doar ainda...Aguarde a saúde melhorar ou procure um profissional da saúde antes da doação", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.YES_OPTION) {
@@ -189,9 +199,9 @@ public class Doador implements Interface{
 	public void funcTransfusao(){
 		
 		Object[] options = {"Sim", "Não", "Cancelar"};
-		int i = JOptionPane.showOptionDialog(null,"Você realizaou transfusão de sangue no último ano?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
+		int i = JOptionPane.showOptionDialog(null,"Você realizou transfusão de sangue no último ano?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
-			JOptionPane.showMessageDialog(null, "Você realizaou transfusão de sangue no último ano.Então ão está apto a doar.Tente doar após 12 meses.", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você realizou transfusão de sangue no último ano.Então ão está apto a doar.Tente doar após 12 meses.", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.NO_OPTION) {
@@ -208,7 +218,7 @@ public class Doador implements Interface{
 		Object[] options = {"Sim", "Não", "Cancelar"};
 		int i = JOptionPane.showOptionDialog(null,"Você está de jejum?", "AVISO", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE,null,options, options[0]);
 		if(i == JOptionPane.YES_OPTION) {
-			JOptionPane.showMessageDialog(null, "Você não deve estar de Jejeum antes da doação. Então ão está apto a doar ainda...", "AVISO", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Você não deve estar de Jejeum antes da doação. Então não está apto a doar ainda...", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
 		}
 		else if(i == JOptionPane.NO_OPTION) {
@@ -263,7 +273,7 @@ public class Doador implements Interface{
             System.exit(0);
 		}
 		else if(i == JOptionPane.NO_OPTION) {
-			funcDoar();
+			//funcDoar();
 		}
 		else if(i == JOptionPane.CANCEL_OPTION) {
 			JOptionPane.showMessageDialog(null, "Obrigado por testar nosso sistema, até breve!", "AVISO", JOptionPane.INFORMATION_MESSAGE);
@@ -271,21 +281,9 @@ public class Doador implements Interface{
 		}
 	}
 	
-	public void funcDoar(){
-		
-		System.out.println("========================================================");
-		System.out.println("=                   Você Pode DOAR!!                   =");
-		System.out.println("=       Encontre o posto de coleta mais próximo!!      =");
-		System.out.println("========================================================");
-		
-		System.out.println();
-		
-		System.out.println(getNome());
-		System.out.println(getIdade());
-		System.out.println(getSangue());
-//		System.exit(0);
+
+
 		
 		
-	}
-	
 }
+	

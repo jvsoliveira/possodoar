@@ -54,14 +54,17 @@ public class Main {
 			d.funcTransfusao();
 		}
 		
-		JOptionPane.showMessageDialog(null, "Nome: " + d.getNome() + 
-				"\nIdade: " + d.getSangue() +
-				"\nTipo de sangue: " + d.getSangue() +
-				"\n========================================================" +
-				"\n=                   Você Pode DOAR!!                   =" +
-				"\n=       Encontre o posto de coleta mais próximo!!      =" +
-				"\n========================================================" 
-				);
-	}
+//		Dados e encerramento do programa
+			
+			JOptionPane.showMessageDialog(null, "Nome: " + d.getNome() + 
+	                "\nIdade: " + d.getIdade() +
+	                "\nTipo de sangue: " + d.getSangue() +
+	                "\n===========================================" +
+	                "\n                         Você Pode DOAR!!              " +
+	                "\n       Encontre o posto de coleta mais próximo!!      " +
+	                "\n============================================" 
+	                );
 
+			
+	}
 }
