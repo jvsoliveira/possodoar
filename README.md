@@ -52,15 +52,6 @@ Segunda parte de alguma das tomadas de decisões.
 
   <br><br>
 
-### Funcionalidades de usuário:
-
-◉	EM CONSTRUÇÃO (AGUARDE....)
-
-<br><br>
-
-### Funcionalidades técnicas:
-
-◉	EM CONSTRUÇÃO (AGUARDE...)
 
 
 
